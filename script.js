@@ -1,11 +1,13 @@
 function firstWord(s) {
-  s = s.split(" ")
-	return s[0]
-if (s.trim() === '') {
-  return '';
+	let words = s
+   if (words.trim() === '') {
+    return words;
+  }
+  words = words.split(" ");
+  return words[0];
 }	
 
-// Do not change the code below
+
 
 const s = prompt("Enter String:");
 alert(firstWord(s));
