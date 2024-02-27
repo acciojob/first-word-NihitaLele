@@ -1,5 +1,5 @@
 function firstWord(s) {
-	let words = s
+	let words = s;
    if (words.trim() === '') {
     return words;
   }
@@ -7,7 +7,6 @@ function firstWord(s) {
   return words[0];
 }	
 
-
-
+// Do not change the code below
 const s = prompt("Enter String:");
 alert(firstWord(s));
