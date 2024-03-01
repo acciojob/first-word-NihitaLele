@@ -1,9 +1,11 @@
 function firstWord(s) {
-    if (s === '') {
-        return s;
-    }
     let words = s.split(" ");
-    return words[0];
+    for (let i = 0; i < words.length; i++) {
+        if (words[i] !== '') {
+            return words[i];
+        }
+    }
+    return '';
 }
 	
 // Do not change the code below
